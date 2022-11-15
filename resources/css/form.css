@@ -1,0 +1,236 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	margin: 0;
+	background-color: rgb(103, 98, 98);
+}
+
+button {
+	position: relative;
+	background-color: #4CAF50;
+	border: none;
+	font-size: 18px;
+	color: #FFFFFF;
+	padding: 10px;
+	width: 100px;
+	text-align: center;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+button:after {
+	content: "";
+	background: #f1f1f1;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+}
+  
+button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+}
+
+button:hover {
+	background-color: #10b31b;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), 0 6px 20px;
+}
+
+div.div-body-form {
+	text-align: center;
+	padding-left: 30px;
+	padding-top: 70px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	width: 96.9%;
+	height: 300px;
+	/* border: 1px solid black; */
+}
+
+div.contain-form {
+	border-radius: 4px;
+	background-color: whitesmoke;
+	width: 98%;
+	height: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	/* display: inline-block; */
+}
+
+div.contain-form-file {
+	border-radius: 4px;
+	background-color: whitesmoke;
+	width: 98%;
+	height: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding-top: 3px;
+	/* display: inline-block; */
+}
+
+div.contain-inputs {
+	display: inline-flex;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	/* border: 1px solid black; */
+	width: 96.8%;
+	height: 35px;
+	font-size: 15px;
+}
+
+div.contain-title {
+	font-size: 15px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	/* border: 1px solid black; */
+}
+
+input[type=text], select, input[type=date] {
+	width: 130px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	border-top: collapse;
+	border-left: collapse;
+	font-size: 16px;
+	background-color: white;
+	background-position: 10px 10px; 
+	background-repeat: no-repeat;
+	padding: 3px 5px 3px 10px;
+	transition: width 0.4s ease-in-out;
+}
+
+input.input-file, input[type=file] {
+	background-color: #333;
+	color: white;
+	width: 25%;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin: none;
+	padding-left: 0;
+	/* padding-top: 5px; */
+	padding-bottom: 0px;
+	padding-right: 0;
+	height: 24px;
+}
+
+input[type=text]:focus, select:focus, input[type=date]:focus {
+	width: 25%;
+}
+
+label {
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	color:rgb(50, 50, 50);
+}
+
+label#lbl-file {
+	padding-top: 0px !important;
+}
+
+div.contain-form input[type=text]:hover, div.contain-form input[type=date]:hover, div.contain-form select:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79);
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+  
+li {
+	float: left;
+}
+  
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+	background-color: #111;
+}
+  
+.active {
+	background-color: #04AA6D;
+}
+
+table, tr, td {
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 10px;
+	border: 1px solid rgb(220, 220, 220);
+	color:rgb(50, 50, 50);
+	font-size: 15px;
+}
+
+th {
+	border-right: 2px solid gray;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+td {
+	background-color: white;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 98%;
+    text-align: center;
+}
+  
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+  
+table tr:hover {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79);
+}
+
+table td:hover {
+    background-color: rgb(97, 97, 97);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79);
+}
+  
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #38393a;
+    color: white;
+}
+
+p.subtext {
+	color: grey;
+	font-size: 12px;
+	font-style: italic;
+}
